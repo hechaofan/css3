@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    body {
+      margin: 0px;
+      padding: 0px;
+    }
+    /*todo 子选择器*/
+    .wrap>span{
+      color: #2c8011;
+    }
+    /*todo 相邻兄弟选择器*/
+    .inner + span {
+      background-color: yellow;
+    }
+    /*todo 3.通用兄弟选择器 */
+    .inner ~ span {
+      background-color: #1a6ecc;
+    }
+    /*todo 4.群组选择器（分组选择器）*/
+    .wrap>.inner,.wrap+p{
+      color: pink;
+    }
+  </style>
+</head>
+<body>
+    <div class="wrap">
+      背景是在20世纪中叶的古巴
+      <div class="inner">背景是在20世纪中叶的古巴</div>
+      <div class="inner">背景是在20世纪中叶的古巴</div>
+      <div class="inner">背景是在20世纪中叶的古巴</div>
+      <span>背景是在20世纪中叶的古巴</span>
+      <span>背景是在20世纪中叶的古巴</span>
+      <span>背景是在20世纪中叶的古巴</span>
+      <span>背景是在20世纪中叶的古巴</span>
+
+    </div>
+    <p>背景是在20世纪中叶的古巴</p>
+</body>
+</html>

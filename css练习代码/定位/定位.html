@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    body{
+      margin: 0px;
+      padding: 0px;
+    }
+    .box{
+      position: relative;
+      top: 100px;
+      left: 100px;
+      width: 500px;
+      height: 500px;
+      background-color: pink;
+    }
+    .innerbox{
+      position: absolute;
+      top: 100px;
+      left: 100px;
+      width: 200px;
+      height: 200px;
+      background-color: green;
+    }
+    .fixbox{
+      position: fixed;
+      top: 600px;
+      left: 600px;
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+    }
+  </style>
+</head>
+<body>
+<div class="box">
+  <div class="innerbox"></div>
+</div>
+<div class="fixbox"></div>
+</body>
+</html>

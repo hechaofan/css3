@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    body{
+      margin: 0px;
+      padding: 0px;
+      min-width: 600px;
+    }
+    .left{
+      position: absolute;
+      top:0;
+      left:0;
+      width: 200px;
+      height: 200px;
+      background-color: pink;
+    }
+    .middle{
+      margin: 0px 200px;
+      height: 200px;
+      background-color: green;
+    }
+    .right{
+      position: absolute;
+      top:0;
+      right:0;
+      width: 200px;
+      height: 200px;
+      background-color: pink;
+    }
+  </style>
+</head>
+<body>
+<!--todo 缺点：当出现滚动条时，内容区在滚动条后边显示，而且内容区仍旧被压缩(不推荐使用)-->
+<div class="left">left</div>
+<div class="middle">middle</div>
+<div class="right">right</div>
+</body>
+</html>

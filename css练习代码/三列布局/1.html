@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    body{
+      margin: 0px;
+      padding: 0px;
+      min-width: 600px;
+    }
+    .header,.footer{
+      width: 100%;
+      height: 100px;
+      background-color: #1b6d85;
+    }
+    .wrap{
+      overflow: hidden;
+      padding: 0px 200px;
+      text-align: center;
+    }
+    .middle,.left,.right{
+      float: left;
+    }
+    .left,.right{
+      width: 200px;
+      background-color: pink;
+    }
+    .middle{
+      width: 100%;
+      background-color: greenyellow;
+      padding-bottom: 10000px;
+      margin-bottom: -10000px;
+    }
+    .left{
+      position:relative;
+      left: -200px;
+      top: 0px;
+      margin-left: -100%;
+      padding-bottom: 10000px;
+      margin-bottom: -10000px;
+    }
+    .right{
+      position:relative;
+      right: -200px;
+      top: 0px;
+      margin-left: -200px;
+      padding-bottom: 10000px;
+      margin-bottom: -10000px;
+    }
+    .text{
+      width: 200px;
+      height: 50px;
+      background-color: pink;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      display: block;
+    }
+    .yuanjiao{
+      width: 100px;
+      height: 100px;
+      background-color: pink;
+      border-radius: 50%;
+    }
+    .boxshaow{
+      margin: 100px auto;
+      width: 100px;
+      height: 100px;
+      background-color: gray;
+
+    }
+    .boxshaow:hover{
+      box-shadow: 0 0 20px 0px gray;
+    }
+    .box1{
+      width: 200px;
+      border: 1px solid black;
+    }
+    .box1:after{
+      content: '';
+      display: block;
+      clear: both;
+    }
+    .box2{
+      float: left;
+      width: 100px;
+      height: 100px;
+      background-color: pink;
+    }
+    .box3{
+      width: 100px;
+      height: 100px;
+      background-color: greenyellow;
+      margin: 100px auto;
+      transition: 1s;
+    }
+    .box3:hover{
+
+      transform: skew(90deg);
+    }
+
+  </style>
+</head>
+<body>
+<div class="header">header</div>
+<div class="wrap">
+  <div class="middle">middle</div>
+  <div class="left">left <br>
+    left <br>
+    left <br>
+
+  </div>
+  <div class="right">right</div>
+</div>
+<div class="footer">footer</div>
+<div class="text">
+  背景是在20世纪中叶的古巴。主人公是一位名叫圣地亚哥的老渔夫，配角是一个叫马诺林的小孩。风烛残年的老渔夫一连八十四天都没有钓到一条鱼，但他仍不肯认输，而是充满着奋斗的精神，终于在第八十五天钓到一条身长十八尺，体重一千五百磅的大马林鱼。大鱼拖着船往海里走，老人依然死拉着不放，即使没有水，没有食物，没有武器，没有助手，左手抽筋，他也丝毫不灰心。经过两天两夜之后，他终于杀死大鱼，把它拴在船边。但许多鲨鱼立刻前来抢夺他的战利品。他一一地杀死它们，到最后只剩下一支折断的舵柄作为武器。结果，大鱼仍难逃被吃光的命运，最终，老人筋疲力尽地拖回一副鱼骨头。他回到家躺在床上，只好从梦中去寻回那往日美好的岁月，以忘却残酷的现实
+
+</div>
+<div class="yuanjiao"></div>
+<div class="boxshaow"></div>
+<div class="box1">
+  <div class="box2"></div>
+</div>
+<div class="box3"></div>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    span{
+      cursor: pointer;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      display: inline-block;
+      color: #333;
+      background: #ccc;
+      min-width: 80px;
+      padding: 0 10px;
+      margin: 10px;
+    }
+    .ech-big,.ech-small{
+      transition: all .3s;
+    }
+    .ech-big:hover{
+      transform: scale(1.3);
+    }
+    .ech-small:hover{
+      transform: scale(.5);
+    }
+    .ech-skew-l, .ech-skew-r, .ech-skew-l-t, .ech-skew-r-b, .ech-skew-l-b, .ech-skew-r-t{
+      transition: all .4s;
+    }
+    .ech-skew-r-t, .ech-skew-l-t {
+      transform-origin: 0 100%;
+    }
+    /*transform-origin  设置旋转元素的基点位置*/
+    .ech-skew-r-b, .ech-skew-l-b {
+      transform-origin: 100% 0;
+    }
+    .ech-skew-l:hover {
+      transform: skew(-15deg);
+    }
+    .ech-skew-r:hover {
+      transform: skew(15deg);
+    }
+    .ech-skew-l-t:hover {
+      transform: skew(-15deg);
+    }
+    .ech-skew-r-t:hover {
+      transform: skew(15deg);
+    }
+    .ech-skew-l-b:hover {
+      transform: skew(15deg);
+    }
+    .ech-skew-r-b:hover {
+      transform: skew(-15deg);
+    }
+  </style>
+</head>
+<body>
+<span class="ech-big">big</span>
+<span class="ech-small">small</span>
+<span class="ech-skew-l">skew-l</span>
+<span class="ech-skew-r">skew-r</span>
+<span class="ech-skew-l-t">skew-l-t</span>
+<span class="ech-skew-r-t">skew-r-t</span>
+<span class="ech-skew-l-b">skew-l-b</span>
+<span class="ech-skew-r-b">skew-r-b</span>
+
+</body>
+</html>

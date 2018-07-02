@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style type="text/css">
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    #box{
+      width: 300px;
+      height: 30px;
+      background: yellowgreen;
+      margin: 200px auto;
+      /*指定动画名*/
+      animation-name: aaa;
+      /*动画时间*/
+      animation-duration: 3s;
+      /*动画移动类型*/
+      animation-timing-function: linear;
+      /*动画延迟时间*/
+      animation-delay: 2s;
+      /*动画循环次数*/
+      animation-iteration-count: infinite;
+      /*animation-direction: reverse;*/
+      /*动画方向*/
+      animation-direction: alternate-reverse;
+
+    }
+    @keyframes aaa {
+      from{transform: rotate(0deg)}
+      to{transform: rotate(360deg)}
+    }
+    #box:hover{
+      /*todo 动画播放状态*/
+      animation-play-state: paused;
+    }
+  </style>
+</head>
+<body>
+<div id="box">1</div>
+</body>
+</html>
